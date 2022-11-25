@@ -1,0 +1,15 @@
+server:
+  port: 9090
+
+#database config
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: user
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#jpa config
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
